@@ -1,0 +1,7 @@
+---
+binaries:
+  'Ubuntu': 'git,iproute2,cron,curl,iputils-ping,lsof,netcat,psmisc,sudo,unzip,wget,idn2,sqlite3,libcap2-bin,dns-root-data,libcap2,bind9-dnsutils,bind9,bind9-doc,bind9-dyndb-ldap,bind9-host,bind9-libs'
+
+packages:
+  present:
+    name: "{{binaries[ansible_distribution]}}"
